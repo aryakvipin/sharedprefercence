@@ -4,21 +4,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'homeshered.dart';
 
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp(home: MyLoginPage(),));
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyLoginPage(),
-    );
-  }
-}
+
 class MyLoginPage extends StatefulWidget {
   @override
   _MyLoginPageState createState() => _MyLoginPageState();
